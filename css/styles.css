@@ -51,7 +51,7 @@ ul {
 
 .section-title {
     font-size: 36px;
-    line-height: 1.67;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
@@ -163,9 +163,6 @@ ul {
 
 .hero {
     background-color: var(--dark-bg-color);
-}
-
-.hero-content {
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -231,7 +228,9 @@ ul {
     gap: 30px;
 }
 
-.benefits-list-item {}
+.benefits-list-item {
+    width: 270px;
+}
 
 .benefits-list-title {
     font-size: 14px;
@@ -290,6 +289,11 @@ ul {
 
 .team-pic {}
 
+.team-text {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
 .team-member {
     font-weight: 500;
     font-size: 16px;
@@ -299,7 +303,6 @@ ul {
     padding-right: 14px;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -309,7 +312,7 @@ ul {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-    padding-bottom: 30px;
+
 }
 
 
@@ -337,7 +340,9 @@ ul {
 
 .list {}
 
-.address-item {}
+.address-item:not(:last-child) {
+    margin-bottom: 9px;
+}
 
 .address-link {
     font-style: normal;
@@ -360,10 +365,6 @@ ul {
 /*------------------- PORTFOLIO ---------------------*/
 /* ------------------------------------------------- */
 
-.portfolio {
-    padding-top: 63px;
-    padding-bottom: 125px;
-}
 
 .filter-list {
     display: flex;
